@@ -1,57 +1,100 @@
+body {
+    font: normal 100% Helvetica, Arial, sans-serif;
+}
+
+/*a, a:visited { 
+	color: #C30; 
+	text-decoration: none; 
+	border-bottom: 1px dotted #C30; 
+}
+        
+a:hover { 
+	color: #900; 
+	border-bottom-style: solid; 
+}*/
+
+/*p { 
+	margin-bottom: 20px; 
+}*/
+
 #page {
+    margin: 40px auto;
+    padding: 0 1em;
+    max-width: 61.75em; /* 988px / 16px = 61.75em */
+}
+
+.entry h2,
+.entry .content {
+  float: right;
+  width: 85.425%; /* 844px / 988px = 0.85425 */
+	}
+
+	.entry .info {
+    float: left;
+    width: 12.551%; /* 124px / 988px = 0.12551 */
+	}
+
+/*#content {
 	margin: 36px auto;
 	width: 90%;
-}
-
-.blog {
-	background: #F8F5F2 url("blog-bg.png") repeat-y 63.11111111111111% 0; /* 568px / 900px */
-	margin: 0 auto 53px;
-	width: 93.75%; /* 900px / 960px */
-}
-
-.article {
-	padding: 40px 8.48056537%; /* 48px / 566px */
-}
-
-.blog main {
-	float: left;
-	width: 62.8888889%; /* 566px / 900px */
-}
-
-.date {
-	float: left;
-	margin-left: -17.0886076%; /* 81px / 474px */
-	width: 14.556962%; /* 69px / 474px */
-}
-/* /end Content Column */
-
-.figure {
-	float: right;
-	margin bottom: 0.5em;
-	margin-left: 2.53164557%; /* 12px / 474px */
-	width: 48.7341772%; /* 231px / 474px */ 
-}
-
-img, 
-embed,
-object, 
-video
- {
-	max-width: 100%;
-}
-
-.blog other {
-	float: right;
-	width: 36.7777778%; /* 331px / 900px */
-}
-
-.recent-entries {
 	margin: 0 auto;
-	width: 69.7885196%; /* 231px / 331px */
-}
-/* /end Content Column */
+}*/
 
-.wrapper-with-intrinsic-ratio {
+/*	#content h1 { 
+		color: #333; 
+		line-height: 1em; 
+	}*/
+	            
+/*		ul#nav { 
+			padding-left: 0; 
+			list-style: none; 
+			width: 100%; 
+			margin-bottom: 40px; 
+		}*/
+
+/*			ul#nav:after { 
+				content: "\0020"; 
+				display: block; 
+				height: 0; 
+				clear: both; 
+				visibility: hidden; 
+			}*/
+
+/*			#content ul#nav li { 
+				float: left; 
+				width: 20%; 
+				text-align: center; 
+			}*/
+
+/*			#content ul#nav a { 
+			  display: block; 
+			  background: #000;
+			  color: #FFF; 
+			  font-weight: bold; 
+			  padding: 10px; 
+			  border-right: 1px solid #FFF;
+			}*/
+/*
+			#content ul#nav a:hover { 
+				background: #333; 
+			}*/
+
+/*.open {
+	display: none;
+	float: left;
+	width: 40px;
+	height: 30px;
+	margin-right: 10px;
+	background: url(menu.png) center center no-repeat #333;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-border-radius: 8px;
+	box-shadow: inset 0 0 3px #000;
+	text-indent: -999999px;
+	border: 0;
+}*/
+
+/*.wrapper-with-intrinsic-ratio {
 	position: relative;
 	padding-bottom: 20%;
 	height: 0;
@@ -62,34 +105,87 @@ video
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: teal;	
+	background: teal;
 }
-
-.pageslide {
-	
-}
-
 /* /end Header */
 
 h1 {
-	font-size: 1.5em; /* 24px / 16px */
-	font-style: italic;
-	font-weight: normal;
+    font-family: Georgia, serif;
+    font-size: 1.5em; /* 24px / 16px = 1.5em */
+    margin-left: 14.575%; /* 144px / 988px = 0.14575 */
+    width: 70.85%; /* 700px / 988px = 0.7085 */
 }
 
 h1 a {
-	font: bold 0.458333333333333em Calibri, Optima, Arial, san-serif; /* 11px / 24px */
+	font: bold 0.458333333333333em Georgia, serif; /* 11px / 24px */
 	color: #747474;
 	letter-spacing: 015em;
 	text-transform: uppercase;
 	text-decoration: none;
 }
-/* /end Fonts */
 
-.lede {
-	padding: 0.8em 5.33333333%; /* 48px / 900px */
+ul {
+    font-size: 0.875em; /* 14px / 16px = 0.875em */
 }
 
+/*img, 
+embed, 
+object, 
+video {
+	max-width: 100%;
+}
+*/
+/* Media Queries */
+@media only screen and (max-width: 959px) {
+  #content { 
+  	width: 748px; 
+  }
+}
+    	
+/* Mobile Landscape and Portrait */
+@media only screen and (max-width: 767px) {
+  #content { 
+  	width: 400px; 
+  }
 
+	  #content h1 { 
+	  	font-size: 22px; 
+	  	line-height: 30px; 
+	  	background-color: #000; 
+	  	color: #FFF; 
+	  	padding: 10px; 
+	  }
 
+	  #content ul#nav { 
+	  	display: none; 
+	  }
+  	    
+  .open { 
+  	display: block; 
+  }
+  
+  #pageslide { 
+  	width: 200px; 
+  }
+
+	  #pageslide #nav li { 
+	  	padding: 10px 0; 
+	  	border-bottom: 1px solid #666; 
+	  }
+
+	  #pageslide #nav li a { 
+	  	color: #FFF; 
+	  	border: none; 
+	  }
+	  
+	  #pageslide #nav li a:hover { 
+	  	text-decoration: underline; 
+	  }
+}
+    	
+    	/* Mobile Portrait */
+        @media only screen and (max-width: 479px) {
+            #content { width: 280px; }
+            #content h1 { font-size: 14px; }
+        }
 
