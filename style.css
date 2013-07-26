@@ -4,6 +4,7 @@
 }
 
 .blog {
+	background: #F8F5F2 url("blog-bg.png") repeat-y 63.11111111111111% 0; /* 568px / 900px */
 	margin: 0 auto 53px;
 	width: 93.75%; /* 900px / 960px */
 }
@@ -23,6 +24,21 @@
 	width: 14.556962%; /* 69px / 474px */
 }
 /* /end Content Column */
+
+.figure {
+	float: right;
+	margin bottom: 0.5em;
+	margin-left: 2.53164557%; /* 12px / 474px */
+	width: 48.7341772%; /* 231px / 474px */ 
+}
+
+img, 
+embed,
+object, 
+video
+ {
+	max-width: 100%;
+}
 
 .blog other {
 	float: right;
@@ -47,6 +63,10 @@
 	width: 100%;
 	height: 100%;
 	background: teal;	
+}
+
+.pageslide {
+	
 }
 
 /* /end Header */
